@@ -95,18 +95,74 @@ namespace Todos_los_items_del_Indec
                     Debug.Write(PDFPath.Text);
                 }
             }
-            
+
             file.Close();
             file.Dispose();
 
-            string[] lines = File.ReadAllLines(textBoxTXTPath.Text);
-            ReadLines = File.OpenText(textBoxTXTPath.Text);
+            dataGridView1.ColumnCount = 3; //asigno el numero de columnas
+            dataGridView1.Columns[0].HeaderText = "Insumos"; //agrego titulo a la columna 0
+            dataGridView1.Columns[1].HeaderText = "mes anterior"; //aca se agrega en la columna 2 el mes anterior
+            dataGridView1.Columns[2].HeaderText = "mes actual"; //aca se agrega en la columna 3 el mes actual
 
+            string[] lines = File.ReadAllLines(textBoxTXTPath.Text);
+            using(StreamWriter writer = new StreamWriter(TXTPath.ArchivePath))
+            {
+                foreach(string line in lines)
+                {
+                    if (!string.IsNullOrWhiteSpace(line))
+                    {
+                        writer.WriteLine(line);
+                    }
+                }
+            }
+            //lines = lines.ToList().Where(x => !string.IsNullOrEmpty(x)).ToArray();
+            ReadLines = File.OpenText(textBoxTXTPath.Text);
+            int counter = 0;
             for (int i = 1; i<lines.Length; i++)
             {
                 WalkLine(i);
+                if (TXTPath.LineNumber == i)
+                {
+                    if (items[0] == "e)")
+                    {
+                        int a = items.Length - 1;
+                        CurrentMonthForm(EItems.Productos_quimicos, 0, a);
+                        
+                    }
+                    if (items[0] == "i)")
+                    {
+                        int a = items.Length - 1;
+                        CurrentMonthForm(EItems.Moteres_electricos_y_equipos_de_aire_acondicionado, 0, a);
+                    }
+                    if (items[0] == "k)")
+                    {
+                        int a = items.Length - 1;
+                        CurrentMonthForm(EItems.Asfaltos_combustibles_y_lubricantes, 0, a);
+                    }
+                    if (items[0] == "t)")
+                    {
+                        int a = items.Length - 1;
+                        CurrentMonthForm(EItems.Medidores_de_caudal, 0, a);
+                    }
+                    if (items[0] == "w)")
+                    {
+                        int a = items.Length - 1;
+                        CurrentMonthForm(EItems.Membrana_impermeabilizante, 0, a);
+                    }
+                    if (items[0] == "j)")
+                    {
+                        int a = items.Length - 1;
+                        CurrentMonthForm(EItems.Equipo_amortizacion_de_equipo, 0, a);
+                        break;
+                    }
+                }
             }
 
+        }
+
+        public void CurrentMonthForm(EItems Item, int PreviousMonthPosition, int CurrentMonthPosition)
+        {
+            dataGridView1.Rows.Add(Item, 0, items[CurrentMonthPosition]);
         }
 
         public void Parsear()
@@ -122,6 +178,7 @@ namespace Todos_los_items_del_Indec
             //    Debug.WriteLine("[" + items[i] + "]"); //aca escribo en el debug como se ve parseado mostrando las separaciones con corchetes
             //    i++;
             //}
+            
         }
 
         public void WalkLine(int lineNumber)

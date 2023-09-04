@@ -1,10 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Todos_los_items_del_Indec.RutaPDF">
+  <Class Name="Todos_los_items_del_Indec.PDFPath">
     <Position X="3.25" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>RutaPDF.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAACAAAACEEAIABBACAAAAAA=</HashCode>
+      <FileName>PDFPath.cs</FileName>
+      <NewMemberFileName>PDFpath.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Todos_los_items_del_Indec.TXTPath">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAACIAAAIgAAACAACAAAAAABABAABAAA=</HashCode>
+      <FileName>TXTPath.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

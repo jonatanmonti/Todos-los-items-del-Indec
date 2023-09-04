@@ -18,7 +18,7 @@
   <Enum Name="Todos_los_items_del_Indec.EItems">
     <Position X="8.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAACAAIAAAAAAAQAAAAAgAAAAAAQAAAAIAAAAA=</HashCode>
+      <HashCode>IAABAAAGCCCIAChDAAMUgQlEAgAkQIIAQBcCAMAgAQA=</HashCode>
       <FileName>Items.cs</FileName>
     </TypeIdentifier>
   </Enum>

@@ -117,17 +117,19 @@ namespace Todos_los_items_del_Indec
             }
             //lines = lines.ToList().Where(x => !string.IsNullOrEmpty(x)).ToArray();
             ReadLines = File.OpenText(textBoxTXTPath.Text);
+            int contador = 0;
             for (int i = 1; i < lines.Length; i++)
             {
                 WalkLine(i);
                 if (TXTPath.LineNumber == i)
                 {
 
-                    switch (items[0])
+                    /*switch (items[0])
                     {
                         case "e)":
                             int a = items.Length - 1;
                             CurrentMonthForm(EItems.Productos_quimicos, 0, a);
+                            
                             break;
                         case "i)":
                             int ab = items.Length - 1;
@@ -149,45 +151,57 @@ namespace Todos_los_items_del_Indec
                             int af = items.Length - 1;
                             CurrentMonthForm(EItems.Equipo_amortizacion_de_equipo, 0, af);
                             break;
-                    }
+                    }*/
 
-                    /*if (items[0] == "e)")
+                    if (items[0] == "e)" && contador == 0)
                     {
                         int a = items.Length - 1;
                         CurrentMonthForm(EItems.Productos_quimicos, 0, a);
-                        
+                        contador++;
                     }
-                    if (items[0] == "i)")
+                    if (items[0] == "i)" && contador == 1)
                     {
                         int a = items.Length - 1;
                         CurrentMonthForm(EItems.Moteres_electricos_y_equipos_de_aire_acondicionado, 0, a);
+                        contador++;
                     }
-                    if (items[0] == "k)")
+                    if (items[0] == "k)" && contador == 2)
                     {
                         int a = items.Length - 1;
                         CurrentMonthForm(EItems.Asfaltos_combustibles_y_lubricantes, 0, a);
+                        contador++;
                     }
-                    if (items[0] == "t)")
+                    if (items[0] == "t)" && contador == 3)
                     {
                         int a = items.Length - 1;
                         CurrentMonthForm(EItems.Medidores_de_caudal, 0, a);
+                        contador++;
                     }
-                    if (items[0] == "w)")
+                    if (items[0] == "w)" && contador == 4)
                     {
                         int a = items.Length - 1;
                         CurrentMonthForm(EItems.Membrana_impermeabilizante, 0, a);
+                        contador++;
                     }
-                    if (items[0] == "j)")
+                    if (items[0] == "j)" && contador == 5)
                     {
                         int a = items.Length - 1;
                         CurrentMonthForm(EItems.Equipo_amortizacion_de_equipo, 0, a);
+                        contador++;
                     }
-                    if (items.Length > 2 && items[2] == "42120-1")
+                    if (items.Length > 2 && items[1] == "42120-1" && contador == 6)
                     {
-                        int a = lines.Length - 1;
-                       CurrentMonthForm(EItems.Equipo_amortizacion_de_equipo, 0, a);
-                    }*/
-                    
+                        int a = items.Length - 1;
+                        CurrentMonthForm(EItems.Aberturas_de_aluminio, 0, a);
+                        contador++;
+                    }
+                    if (items.Length > 2 && items[2] == "42120-2" && contador == 6)
+                    {
+                        int a = items.Length - 1;
+                        CurrentMonthForm(EItems.Aberturas_de_chapa_de_hierro, 0, a);
+                        contador++;
+                    }
+
                 }
             }
 

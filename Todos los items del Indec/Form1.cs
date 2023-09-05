@@ -78,11 +78,14 @@ namespace Todos_los_items_del_Indec
 
         public void WalkBox(int IdItem, string referencia, int NumContador, EItems name)
         {
-            if (items[IdItem] == referencia && contador == NumContador && items.Length > 2)
+            if(items.Length > 5)
             {
-                int a = items.Length - 1;
-                CurrentMonthForm(name, 0, a);
-                contador++;
+                if (items[IdItem] == referencia && contador == NumContador)
+                {
+                    int a = items.Length - 1;
+                    CurrentMonthForm(name, 0, a);
+                    contador++;
+                }
             }
         }
 
@@ -180,6 +183,17 @@ namespace Todos_los_items_del_Indec
                     WalkBox(2, "36320-2", 34, EItems.Caños_y_tubos_de_polipropileno);
                     WalkBox(1, "36320-1", 35, EItems.Caños_y_tubos_de_PVC);
                     WalkBox(1, "46220-1", 36, EItems.Capacitores_electroliticos);
+                    WalkBox(2, "34800-1", 37, EItems.Cauchos_sinteticos);
+                    WalkBox(1, "37440-1", 38, EItems.Cemento_portland);
+                    WalkBox(1, "42992-1", 39, EItems.Cerraduras);
+                    WalkBox(1, "42999-2", 40, EItems.Chapas_metalicas);
+                    WalkBox(2, "42944-2", 41, EItems.Clavos);
+                    WalkBox(1, "43230-1", 42, EItems.Compresores_y_sus_repuestos);
+
+                    //
+                    //
+                    //segunda pagina cuadro 2
+
 
                 }
             }

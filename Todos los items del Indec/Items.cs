@@ -17,6 +17,7 @@ namespace Todos_los_items_del_Indec
         Equipo_amortizacion_de_equipo,
         
         //cuadro 2
+        //pagina 1 cuadro 2
 
         Aberturas_de_aluminio,
         Aberturas_de_chapa_de_hierro,
@@ -55,5 +56,7 @@ namespace Todos_los_items_del_Indec
         Chapas_metalicas,
         Clavos,
         Compresores_y_sus_repuestos,
+
+        //pagina 2 cuadro 2
     }
 }

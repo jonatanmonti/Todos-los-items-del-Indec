@@ -135,8 +135,9 @@ namespace Todos_los_items_del_Indec
                 WalkLine(i);
                 if (TXTPath.LineNumber == i)
                 {
-
+                    //
                     //Cuadro 1
+                    //
                     WalkBox(0, "e)", 0, EItems.Productos_quimicos);
                     WalkBox(0, "i)", 1, EItems.Moteres_electricos_y_equipos_de_aire_acondicionado);
                     WalkBox(0, "k)", 2, EItems.Asfaltos_combustibles_y_lubricantes);
@@ -150,7 +151,35 @@ namespace Todos_los_items_del_Indec
 
                     WalkBox(1, "42120-1", 6, EItems.Aberturas_de_aluminio);
                     WalkBox(2, "42120-2", 7, EItems.Aberturas_de_chapa_de_hierro);
-                    
+                    WalkBox(1, "37910-1", 8, EItems.Abrasivos);
+                    WalkBox(1, "42921-4", 9, EItems.Abrazaderas);
+                    WalkBox(1, "44251-1", 10, EItems.Accesorio_para_maquinas_herramientas);
+                    WalkBox(1, "42922-1", 11, EItems.Accesorios_para_herramientas);
+                    WalkBox(1, "33380-1", 12, EItems.Aceites_lubricantes);
+                    WalkBox(1, "49229-1", 13, EItems.Acoplados);
+                    WalkBox(1, "46420-1", 14, EItems.Acumuladores_electronicos);
+                    WalkBox(2, "41263-1", 15, EItems.Alambres_de_acero);
+                    WalkBox(2, "41241-1", 16, EItems.Alambres_de_hierro);
+                    WalkBox(2, "44216-1", 17, EItems.Amoladoras);
+                    WalkBox(2, "15400-1", 18, EItems.Arcillas);
+                    WalkBox(1, "15310-1", 19, EItems.Arenas);
+                    WalkBox(2, "37210-1", 20, EItems.Artefactos_sanitarios);
+                    WalkBox(2, "37540-2", 21, EItems.Articulos_pretensados);
+                    WalkBox(1, "49113-1", 22, EItems.Automoviles);
+                    WalkBox(1, "36270-1", 23, EItems.Autopartes_de_goma);
+                    WalkBox(1, "46539-1", 24, EItems.Balastos);
+                    WalkBox(1, "37370-1", 25, EItems.Baldosas_ceramicas);
+                    WalkBox(1, "35110-4", 26, EItems.Barnices_y_protectores_para_madera);
+                    WalkBox(2, "41261-1", 27, EItems.Barras_de_hierro_y_acero);
+                    WalkBox(1, "36490-6", 28, EItems.Bolsas_de_plastico);
+                    WalkBox(1, "42944-1", 29, EItems.Bulones);
+                    WalkBox(1, "42320-1", 30, EItems.Calderas_de_gas_y_fuel_oil);
+                    WalkBox(1, "37420-1", 31, EItems.Cales);
+                    WalkBox(2, "49115-2", 32, EItems.Camiones_y_sus_chasis);
+                    WalkBox(2, "36320-3", 33, EItems.Caños_y_tubos_de_polietileno);
+                    WalkBox(2, "36320-2", 34, EItems.Caños_y_tubos_de_polipropileno);
+                    WalkBox(1, "36320-1", 35, EItems.Caños_y_tubos_de_PVC);
+                    WalkBox(1, "46220-1", 36, EItems.Capacitores_electroliticos);
 
                 }
             }

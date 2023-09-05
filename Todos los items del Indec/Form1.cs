@@ -115,7 +115,7 @@ namespace Todos_los_items_del_Indec
                     }
                 }
             }
-            //lines = lines.ToList().Where(x => !string.IsNullOrEmpty(x)).ToArray();
+
             ReadLines = File.OpenText(textBoxTXTPath.Text);
             int contador = 0;
             for (int i = 1; i < lines.Length; i++)
@@ -124,34 +124,7 @@ namespace Todos_los_items_del_Indec
                 if (TXTPath.LineNumber == i)
                 {
 
-                    /*switch (items[0])
-                    {
-                        case "e)":
-                            int a = items.Length - 1;
-                            CurrentMonthForm(EItems.Productos_quimicos, 0, a);
-                            
-                            break;
-                        case "i)":
-                            int ab = items.Length - 1;
-                            CurrentMonthForm(EItems.Moteres_electricos_y_equipos_de_aire_acondicionado, 0, ab);
-                            break;
-                        case "k)":
-                            int ac = items.Length - 1;
-                            CurrentMonthForm(EItems.Asfaltos_combustibles_y_lubricantes, 0, ac);
-                            break;
-                        case "t)":
-                            int ad = items.Length - 1;
-                            CurrentMonthForm(EItems.Medidores_de_caudal, 0, ad);
-                            break;
-                        case "w)":
-                            int ae = items.Length - 1;
-                            CurrentMonthForm(EItems.Membrana_impermeabilizante, 0, ae);
-                            break;
-                        case "j)":
-                            int af = items.Length - 1;
-                            CurrentMonthForm(EItems.Equipo_amortizacion_de_equipo, 0, af);
-                            break;
-                    }*/
+                    //Cuadro 1
 
                     if (items[0] == "e)" && contador == 0)
                     {
@@ -189,6 +162,11 @@ namespace Todos_los_items_del_Indec
                         CurrentMonthForm(EItems.Equipo_amortizacion_de_equipo, 0, a);
                         contador++;
                     }
+
+                    //
+                    //cuadro 2
+                    //primera pagina del cuadro 2
+
                     if (items.Length > 2 && items[1] == "42120-1" && contador == 6)
                     {
                         int a = items.Length - 1;

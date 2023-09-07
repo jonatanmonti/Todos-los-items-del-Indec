@@ -143,9 +143,37 @@ namespace Todos_los_items_del_Indec
        Tejas,
        Tejidos_de_alambre,
 
-       //
-       //
-       //
+        //
+        //
+        //Fourth page box 2
 
+       Telas_plásticas,
+       Transformadores,
+       Utilitarios,
+       Vidrio_plano,
+       Vidrios_laminados,
+       Vidrios_templados,
+       Vidrios_térmicos,
+       Yesos_y_piedras_calizas,
+       Accesorios_y_repuestos_para_máquinas_de_uso_especial,
+       Aceros_aleados,
+       Chapas_de_hierro_al_silicio,
+       Chapas_de_hierro_acero,
+       Cobre,
+       Estaño,
+       Manganeso,
+       Máquinas_para_perforar_taladrar_o_fresar,
+       Máquinas_para_uso_general_Máquinas_para_soldar_plásticos,
+       Papeles,
+       Perfiles_de_hierro_acero,
+       Piezas_y_partes_para_máquinas_de_uso_general_rodamientos,
+       Polietileno,
+       Polipropileno,
+       Soda_solvay,
+       Toner,
+
+       //
+       //
+       //
     }
 }

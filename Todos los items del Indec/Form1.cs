@@ -249,8 +249,55 @@ namespace Todos_los_items_del_Indec
                     //
                     //Third page box 2
 
+                    WalkBox(1, "31420-1", 82, EItems.Maderas_terciadas_fenólicas);
+                    WalkBox(1, "31420-2", 83, EItems.Maderas_terciadas_no_fenólicas);
+                    WalkBox(2, "44222-1", 84, EItems.Máquinas_para_carpintería);
+                    WalkBox(2, "44427-1", 85, EItems.Máquinas_viales_autopropulsadas);
+                    WalkBox(1, "44430-1", 86, EItems.Máquinas_viales_no_autopropulsadas);
+                    WalkBox(1, "37930-1", 87, EItems.Membranas_asfálticas);
+                    WalkBox(2, "37330-1", 88, EItems.Morteros_refractorios);
+                    WalkBox(1, "37540-1", 89, EItems.Mosaicos);
+                    WalkBox(2, "43121-1", 90, EItems.Motores_a_explosión_de_uso_industrial);
+                    WalkBox(1, "46112-1", 91, EItems.Motores_eléctricos);
+                    WalkBox(2, "43122-1", 92, EItems.Motores_para_vehículos);
+                    WalkBox(1, "49911-1", 93, EItems.Motos);
+                    WalkBox(1, "33310-1", 94, EItems.Naftas);
+                    WalkBox(1, "32129-1", 95, EItems.Papel_obra);
+                    WalkBox(1, "37990-2", 96, EItems.Pegamentos_para_revestimientos);
+                    WalkBox(1, "41251-1", 97, EItems.Perfiles_de_hierro);
+                    WalkBox(1, "12010-1", 98, EItems.Petróleo_crudo);
+                    WalkBox(2, "15320-1", 99, EItems.Piedra_granítica);
+                    WalkBox(1, "41116-1", 100, EItems.Piezas_fundidas);
+                    WalkBox(1, "42999-1", 101, EItems.Piletas_y_mezadas_de_acero_inoxidable);
+                    WalkBox(1, "35110-3", 102, EItems.Pinturas_al_látex);
+                    WalkBox(1, "34740-6", 103, EItems.Plastificantes);
+                    WalkBox(1, "34730-1", 104, EItems.Polímeros_del_cloruro_de_vinilo);
+                    WalkBox(2, "34720-1", 105, EItems.Polímeros_del_estireno);
+                    WalkBox(1, "34710-1", 106, EItems.Polímeros_del_etileno);
+                    WalkBox(1, "41530-1", 107, EItems.Productos_básicos_de_aluminio);
+                    WalkBox(1, "41510-1", 108, EItems.Productos_básicos_de_cobre_y_latón);
+                    WalkBox(1, "31600-2", 109, EItems.Puertas_placa);
+                    WalkBox(1, "49129-2", 110, EItems.Radiadores);
+                    WalkBox(1, "34740-1", 111, EItems.Resinas_plásticas);
+                    WalkBox(2, "43310-1", 112, EItems.Rodamientos);
+                    WalkBox(1, "44240-1", 113, EItems.Soldadoras_eléctricas);
+                    WalkBox(1, "33500-1", 114, EItems.Subproductos_de_refinería_Coke_Parafina);
+                    WalkBox(2, "44214-1", 115, EItems.Taladros);
+                    WalkBox(1, "37350-2", 116, EItems.Tejas);
+                    WalkBox(1, "42943-1", 117, EItems.Tejidos_de_alambre);
 
+                    //
+                    //
+                    //Fourth page box 2
 
+                    WalkBox(1, "36990-1", 118, EItems.Telas_plásticas);
+                    WalkBox(1, "46121-1", 119, EItems.Transformadores);
+                    WalkBox(1, "49115-1", 120, EItems.Utilitarios);
+                    WalkBox(2, "37113-1", 121, EItems.Vidrio_plano);
+                    WalkBox(2, "37199-3", 122, EItems.Vidrios_laminados);
+                    WalkBox(2, "37199-1", 123, EItems.Vidrios_templados);
+                    WalkBox(2, "37199-2", 124, EItems.Vidrios_térmicos);
+                    WalkBox(1, "15200-1", 125, EItems.Yesos_y_piedras_calizas);
                 }
             }
 

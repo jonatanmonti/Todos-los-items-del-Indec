@@ -17,7 +17,7 @@ namespace Todos_los_items_del_Indec
         Equipo_amortización_de_equipo,
         
         //Box 2
-        //First age 1 box 2
+        //page 1/4 box 2
         //
 
         Aberturas_de_aluminio,
@@ -59,7 +59,7 @@ namespace Todos_los_items_del_Indec
         Compresores_y_sus_repuestos,
 
         //
-        //second page box 2
+        //page 2/4 box 2
         //
 
        Conductores_eléctricos,
@@ -103,7 +103,7 @@ namespace Todos_los_items_del_Indec
        Maderas_aserradas,
 
         //
-        //Third page box 2
+        //page 3/4 box 2
         //
 
        Maderas_terciadas_fenólicas,
@@ -145,7 +145,7 @@ namespace Todos_los_items_del_Indec
 
         //
         //
-        //Fourth page box 2
+        //page 4/4 box 2
 
        Telas_plásticas,
        Transformadores,
@@ -163,6 +163,7 @@ namespace Todos_los_items_del_Indec
        Estaño,
        Manganeso,
        Máquinas_para_perforar_taladrar_o_fresar,
+       Máquinas_para_rebanar_afilar_amolar_pulir_u_otro_acabado,
        Máquinas_para_uso_general_Máquinas_para_soldar_plásticos,
        Papeles,
        Perfiles_de_hierro_acero,
@@ -173,7 +174,9 @@ namespace Todos_los_items_del_Indec
        Toner,
 
        //
-       //
-       //
+       //Box 3
+       //Page 1/4 box 3
+
+       
     }
 }

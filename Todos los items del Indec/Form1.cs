@@ -1,4 +1,5 @@
-﻿using iText.Kernel.Pdf;
+﻿using iText.Commons.Bouncycastle.Asn1;
+using iText.Kernel.Pdf;
 using iText.Kernel.Pdf.Canvas.Parser;
 using iText.Kernel.Pdf.Canvas.Parser.Listener;
 using System;
@@ -95,6 +96,19 @@ namespace Todos_los_items_del_Indec
                 {
                     int a = items.Length - 1;
                     CurrentMonthForm(name, 0, a);
+                    contador++;
+                }
+            }
+        }
+
+        public void WalkBoxString(int IdItem, string referencia, int NumContador, string name)
+        {
+            if (items.Length > 5)
+            {
+                if (items[IdItem] == referencia && contador == NumContador)
+                {
+                    int a = items.Length - 1;
+                    CurrentMonthFormString(name, 0, a);
                     contador++;
                 }
             }
@@ -298,12 +312,43 @@ namespace Todos_los_items_del_Indec
                     WalkBox(2, "37199-1", 123, EItems.Vidrios_templados);
                     WalkBox(2, "37199-2", 124, EItems.Vidrios_térmicos);
                     WalkBox(1, "15200-1", 125, EItems.Yesos_y_piedras_calizas);
+                    WalkBox(1, "94920-1", 126, EItems.Accesorios_y_repuestos_para_máquinas_de_uso_especial);
+                    WalkBox(1, "91223-1", 127, EItems.Aceros_aleados);
+                    WalkBox(2, "91211-11", 128, EItems.Chapas_de_hierro_al_silicio);
+                    WalkBox(1, "91211-1", 129, EItems.Chapas_de_hierro_acero);
+                    WalkBox(2, "91511-1", 130, EItems.Cobre);
+                    WalkBox(1, "91547-1", 131, EItems.Estaño);
+                    WalkBox(1, "81100-1", 132, EItems.Maderas_aserradas); //this item already exists
+                    WalkBox(2, "91601-2", 133, EItems.Manganeso);
+                    WalkBox(1, "94214-1", 134, EItems.Máquinas_para_perforar_taladrar_o_fresar);
+                    WalkBox(2, "94216-1", 135, EItems.Máquinas_para_rebanar_afilar_amolar_pulir_u_otro_acabado);
+                    WalkBox(2, "93310-2", 136, EItems.Máquinas_para_uso_general_Máquinas_para_soldar_plásticos);
+                    WalkBox(2, "82129-1", 137, EItems.Papeles);
+                    WalkBox(2, "91251-1", 138, EItems.Perfiles_de_hierro_acero);
+                    WalkBox(1, "93310-1", 139, EItems.Piezas_y_partes_para_máquinas_de_uso_general_rodamientos);
+                    WalkBox(2, "84710-1", 140, EItems.Polietileno);
+                    WalkBox(2, "84740-1", 141, EItems.Polipropileno);
+                    WalkBox(2, "84230-1", 142, EItems.Soda_solvay);
+                    WalkBox(2, "85490-1", 143, EItems.Toner);
+
+                    //
+                    //
+                    //
+
+                    WalkBoxString(2, "28111", 144, "Estructuras metálicas para construcción (incluye: Aberturas" +
+                        "de aluminio, Aberturas de chapa de hierro y cortinas de aluminio)");
+                    WalkBoxString(2, "27101", 145, "");
                 }
             }
 
         }
 
         public void CurrentMonthForm(EItems Item, int PreviousMonthPosition, int CurrentMonthPosition)
+        {
+            dataGridView1.Rows.Add(Item, 0, items[CurrentMonthPosition]);
+        }
+
+        public void CurrentMonthFormString(string Item, int PreviousMonthPosition, int CurrentMonthPosition)
         {
             dataGridView1.Rows.Add(Item, 0, items[CurrentMonthPosition]);
         }

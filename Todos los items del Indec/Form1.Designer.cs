@@ -43,9 +43,10 @@
             // bttnPDFpath
             // 
             this.bttnPDFpath.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnPDFpath.Location = new System.Drawing.Point(39, 139);
+            this.bttnPDFpath.Location = new System.Drawing.Point(52, 171);
+            this.bttnPDFpath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bttnPDFpath.Name = "bttnPDFpath";
-            this.bttnPDFpath.Size = new System.Drawing.Size(201, 34);
+            this.bttnPDFpath.Size = new System.Drawing.Size(268, 42);
             this.bttnPDFpath.TabIndex = 0;
             this.bttnPDFpath.Text = "Obtener el archivo PDF";
             this.bttnPDFpath.UseVisualStyleBackColor = true;
@@ -54,18 +55,20 @@
             // textBoxPDFPath
             // 
             this.textBoxPDFPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPDFPath.Location = new System.Drawing.Point(281, 145);
+            this.textBoxPDFPath.Location = new System.Drawing.Point(375, 178);
+            this.textBoxPDFPath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPDFPath.Name = "textBoxPDFPath";
-            this.textBoxPDFPath.Size = new System.Drawing.Size(276, 22);
+            this.textBoxPDFPath.Size = new System.Drawing.Size(367, 26);
             this.textBoxPDFPath.TabIndex = 1;
             // 
             // bttnFirstPage
             // 
             this.bttnFirstPage.Enabled = false;
             this.bttnFirstPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnFirstPage.Location = new System.Drawing.Point(39, 179);
+            this.bttnFirstPage.Location = new System.Drawing.Point(52, 220);
+            this.bttnFirstPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bttnFirstPage.Name = "bttnFirstPage";
-            this.bttnFirstPage.Size = new System.Drawing.Size(201, 34);
+            this.bttnFirstPage.Size = new System.Drawing.Size(268, 42);
             this.bttnFirstPage.TabIndex = 2;
             this.bttnFirstPage.Text = "Primera pagina del anexo";
             this.bttnFirstPage.UseVisualStyleBackColor = true;
@@ -75,9 +78,10 @@
             // 
             this.bttnLastPage.Enabled = false;
             this.bttnLastPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnLastPage.Location = new System.Drawing.Point(39, 219);
+            this.bttnLastPage.Location = new System.Drawing.Point(52, 270);
+            this.bttnLastPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bttnLastPage.Name = "bttnLastPage";
-            this.bttnLastPage.Size = new System.Drawing.Size(201, 34);
+            this.bttnLastPage.Size = new System.Drawing.Size(268, 42);
             this.bttnLastPage.TabIndex = 3;
             this.bttnLastPage.Text = "Ultima pagina del anexo";
             this.bttnLastPage.UseVisualStyleBackColor = true;
@@ -86,26 +90,29 @@
             // maskedFirstPage
             // 
             this.maskedFirstPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedFirstPage.Location = new System.Drawing.Point(281, 185);
+            this.maskedFirstPage.Location = new System.Drawing.Point(375, 228);
+            this.maskedFirstPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.maskedFirstPage.Name = "maskedFirstPage";
-            this.maskedFirstPage.Size = new System.Drawing.Size(276, 22);
+            this.maskedFirstPage.Size = new System.Drawing.Size(367, 26);
             this.maskedFirstPage.TabIndex = 4;
             // 
             // maskedLastPage
             // 
             this.maskedLastPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedLastPage.Location = new System.Drawing.Point(281, 225);
+            this.maskedLastPage.Location = new System.Drawing.Point(375, 277);
+            this.maskedLastPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.maskedLastPage.Name = "maskedLastPage";
-            this.maskedLastPage.Size = new System.Drawing.Size(276, 22);
+            this.maskedLastPage.Size = new System.Drawing.Size(367, 26);
             this.maskedLastPage.TabIndex = 5;
             // 
             // bttnTXT
             // 
             this.bttnTXT.Enabled = false;
             this.bttnTXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnTXT.Location = new System.Drawing.Point(39, 287);
+            this.bttnTXT.Location = new System.Drawing.Point(52, 353);
+            this.bttnTXT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bttnTXT.Name = "bttnTXT";
-            this.bttnTXT.Size = new System.Drawing.Size(518, 34);
+            this.bttnTXT.Size = new System.Drawing.Size(691, 42);
             this.bttnTXT.TabIndex = 6;
             this.bttnTXT.Text = "Crear y Guardar TXT";
             this.bttnTXT.UseVisualStyleBackColor = true;
@@ -114,24 +121,27 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(621, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(828, 15);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(542, 536);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(723, 660);
             this.dataGridView1.TabIndex = 7;
             // 
             // textBoxTXTPath
             // 
             this.textBoxTXTPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTXTPath.Location = new System.Drawing.Point(39, 259);
+            this.textBoxTXTPath.Location = new System.Drawing.Point(52, 319);
+            this.textBoxTXTPath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxTXTPath.Name = "textBoxTXTPath";
-            this.textBoxTXTPath.Size = new System.Drawing.Size(518, 22);
+            this.textBoxTXTPath.Size = new System.Drawing.Size(689, 26);
             this.textBoxTXTPath.TabIndex = 8;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1175, 560);
+            this.ClientSize = new System.Drawing.Size(1567, 689);
             this.Controls.Add(this.textBoxTXTPath);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bttnTXT);
@@ -141,9 +151,11 @@
             this.Controls.Add(this.bttnFirstPage);
             this.Controls.Add(this.textBoxPDFPath);
             this.Controls.Add(this.bttnPDFpath);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Items del Indec";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

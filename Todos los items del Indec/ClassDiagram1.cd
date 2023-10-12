@@ -15,10 +15,24 @@
       <FileName>TXTPath.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Todos_los_items_del_Indec.Item">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAEAACAAggAAAIAAAAAAAAAEACAACAAAIAAAAAwA=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Todos_los_items_del_Indec.Access">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAABAAAAGAAAE=</HashCode>
+      <FileName>Access.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Enum Name="Todos_los_items_del_Indec.EItems">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ZUABogAmSCKIEChTwBsUgQlEEgAuQZJAwBfCBOookQA=</HashCode>
+      <HashCode>ZcgBogAv0DSqvXjZYlu/wZhMko4sQfNQgBaCU+ooxUA=</HashCode>
       <FileName>Items.cs</FileName>
     </TypeIdentifier>
   </Enum>

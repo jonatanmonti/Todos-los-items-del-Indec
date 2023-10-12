@@ -163,10 +163,13 @@ namespace Todos_los_items_del_Indec
                 WalkLine(i);
                 if (TXTPath.LineNumber == i)
                 {
+
+
+
                     //
                     //Box 1
                     //
-                    WalkBox(0, "e)", 0, EItems.Productos_químicos);
+                    /*WalkBox(0, "e)", 0, EItems.Productos_químicos);
                     WalkBox(0, "i)", 1, EItems.Moteres_eléctricos_y_equipos_de_aire_acondicionado);
                     WalkBox(0, "k)", 2, EItems.Asfaltos_combustibles_y_lubricantes);
                     WalkBox(0, "t)", 3, EItems.Medidores_de_caudal);
@@ -337,7 +340,7 @@ namespace Todos_los_items_del_Indec
 
                     WalkBoxString(2, "28111", 144, "Estructuras metálicas para construcción (incluye: Aberturas" +
                         "de aluminio, Aberturas de chapa de hierro y cortinas de aluminio)");
-                    WalkBoxString(2, "27101", 145, "");
+                    WalkBoxString(2, "27101", 145, "");*/
                 }
             }
 
@@ -383,5 +386,15 @@ namespace Todos_los_items_del_Indec
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            link();
+        }
+
+        void link()
+        {
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = Item.tolist();
+        }
     }
 }

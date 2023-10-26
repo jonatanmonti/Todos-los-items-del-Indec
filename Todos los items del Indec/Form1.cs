@@ -97,7 +97,7 @@ namespace Todos_los_items_del_Indec
                 {   
                     if(items.Length > 5)
                     {
-                        if (row.Cells[1].Value.ToString() == items[1] || row.Cells[1].Value.ToString() == items[2])
+                        if (row.Cells[1].Value.ToString() == items[0].Replace(" - ", "-") || row.Cells[1].Value.ToString() == items[1].Replace(" - ", "-") || row.Cells[1].Value.ToString() == items[2].Replace(" - ", "-"))
                         {
                             int a = items.Length - 1;
                             row.Cells[3].Value = items[a];
@@ -158,10 +158,11 @@ namespace Todos_los_items_del_Indec
 
         public void Parsear()
         {
+           
             items = TXTPath.Line.Split(' '); //asignamos que el separador es el espacio vacio
             items = items.ToList().Where(x => !string.IsNullOrEmpty(x)).ToArray(); //esto sirve para indicar que todo espacio vacio extra no nos moleste
             int i = 0;
-            Debug.WriteLine(TXTPath.Line); //aca esbrico en el debug cada linea del archivo de texto
+            //Debug.WriteLine(TXTPath.Line); //aca esbrico en el debug cada linea del archivo de texto
             dataGridView1.AllowUserToAddRows = false;
 
             //while (i < items.Length)
@@ -176,7 +177,7 @@ namespace Todos_los_items_del_Indec
         {
             while (!ReadLines.EndOfStream)
             {
-                TXTPath.Line = ReadLines.ReadLine();
+                TXTPath.Line = ReadLines.ReadLine().Replace(@" - ", "-");
 
                 if(++TXTPath.LineNumber == lineNumber)
                 {

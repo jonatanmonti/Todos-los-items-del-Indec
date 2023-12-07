@@ -31,6 +31,7 @@ namespace Todos_los_items_del_Indec
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void bttnPDFpath_Click(object sender, EventArgs e)
@@ -100,7 +101,7 @@ namespace Todos_los_items_del_Indec
                         if (row.Cells[1].Value.ToString() == items[0].Replace(" - ", "-") || row.Cells[1].Value.ToString() == items[1].Replace(" - ", "-") || row.Cells[1].Value.ToString() == items[2].Replace(" - ", "-"))
                         {
                             int a = items.Length - 1;
-                            row.Cells[3].Value = items[a];
+                            row.Cells[10].Value = items[a];
                         }
                     }
                 }
@@ -187,9 +188,33 @@ namespace Todos_los_items_del_Indec
             }
         }
 
+        public void AgregarColumna(string nombreColumna)
+        {
+            // Verifica si la columna ya existe antes de agregarla
+            if (dataGridView1.Columns[nombreColumna] == null)
+            {
+                // Crea una nueva columna
+                DataGridViewTextBoxColumn columna = new DataGridViewTextBoxColumn
+                {
+                    Name = nombreColumna,
+                    HeaderText = nombreColumna
+                };
+
+                // Agrega la columna al DataGridView
+                dataGridView1.Columns.Add(columna);
+            }
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             link();
+            AgregarColumna("Noviembre");
+            AgregarColumna("Diciembre");
+            AgregarColumna("Enero");
+            AgregarColumna("Febrero");
+            AgregarColumna("Abril");
+            AgregarColumna("Mayo");
+            AgregarColumna("Junio");
         }
 
         void link()

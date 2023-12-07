@@ -73,7 +73,7 @@ namespace Todos_los_items_del_Indec
 				item.id = reader["Id"].ToString();
 				item.codeCPC = reader["CodigoCPC"].ToString();
 				item.description = reader["Descripcion"].ToString();
-				item.worth = reader["Valor"].ToString();
+				//item.worth = reader["Valor"].ToString();
 				list.Add(item);
 			}
 

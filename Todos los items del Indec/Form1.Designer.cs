@@ -44,7 +44,7 @@
             // 
             this.bttnPDFpath.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnPDFpath.Location = new System.Drawing.Point(52, 171);
-            this.bttnPDFpath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bttnPDFpath.Margin = new System.Windows.Forms.Padding(4);
             this.bttnPDFpath.Name = "bttnPDFpath";
             this.bttnPDFpath.Size = new System.Drawing.Size(268, 42);
             this.bttnPDFpath.TabIndex = 0;
@@ -56,7 +56,7 @@
             // 
             this.textBoxPDFPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPDFPath.Location = new System.Drawing.Point(375, 178);
-            this.textBoxPDFPath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPDFPath.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPDFPath.Name = "textBoxPDFPath";
             this.textBoxPDFPath.Size = new System.Drawing.Size(367, 26);
             this.textBoxPDFPath.TabIndex = 1;
@@ -66,7 +66,7 @@
             this.bttnFirstPage.Enabled = false;
             this.bttnFirstPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnFirstPage.Location = new System.Drawing.Point(52, 220);
-            this.bttnFirstPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bttnFirstPage.Margin = new System.Windows.Forms.Padding(4);
             this.bttnFirstPage.Name = "bttnFirstPage";
             this.bttnFirstPage.Size = new System.Drawing.Size(268, 42);
             this.bttnFirstPage.TabIndex = 2;
@@ -79,7 +79,7 @@
             this.bttnLastPage.Enabled = false;
             this.bttnLastPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnLastPage.Location = new System.Drawing.Point(52, 270);
-            this.bttnLastPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bttnLastPage.Margin = new System.Windows.Forms.Padding(4);
             this.bttnLastPage.Name = "bttnLastPage";
             this.bttnLastPage.Size = new System.Drawing.Size(268, 42);
             this.bttnLastPage.TabIndex = 3;
@@ -91,7 +91,7 @@
             // 
             this.maskedFirstPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedFirstPage.Location = new System.Drawing.Point(375, 228);
-            this.maskedFirstPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.maskedFirstPage.Margin = new System.Windows.Forms.Padding(4);
             this.maskedFirstPage.Name = "maskedFirstPage";
             this.maskedFirstPage.Size = new System.Drawing.Size(367, 26);
             this.maskedFirstPage.TabIndex = 4;
@@ -100,7 +100,7 @@
             // 
             this.maskedLastPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedLastPage.Location = new System.Drawing.Point(375, 277);
-            this.maskedLastPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.maskedLastPage.Margin = new System.Windows.Forms.Padding(4);
             this.maskedLastPage.Name = "maskedLastPage";
             this.maskedLastPage.Size = new System.Drawing.Size(367, 26);
             this.maskedLastPage.TabIndex = 5;
@@ -110,7 +110,7 @@
             this.bttnTXT.Enabled = false;
             this.bttnTXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnTXT.Location = new System.Drawing.Point(52, 353);
-            this.bttnTXT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bttnTXT.Margin = new System.Windows.Forms.Padding(4);
             this.bttnTXT.Name = "bttnTXT";
             this.bttnTXT.Size = new System.Drawing.Size(691, 42);
             this.bttnTXT.TabIndex = 6;
@@ -122,7 +122,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(828, 15);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(723, 660);
@@ -132,7 +132,7 @@
             // 
             this.textBoxTXTPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTXTPath.Location = new System.Drawing.Point(52, 319);
-            this.textBoxTXTPath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxTXTPath.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTXTPath.Name = "textBoxTXTPath";
             this.textBoxTXTPath.Size = new System.Drawing.Size(689, 26);
             this.textBoxTXTPath.TabIndex = 8;
@@ -151,7 +151,7 @@
             this.Controls.Add(this.bttnFirstPage);
             this.Controls.Add(this.textBoxPDFPath);
             this.Controls.Add(this.bttnPDFpath);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Items del Indec";

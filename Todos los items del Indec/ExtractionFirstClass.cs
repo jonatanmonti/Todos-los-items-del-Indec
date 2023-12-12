@@ -104,6 +104,7 @@ namespace Todos_los_items_del_Indec
 
     public class PriceIndexValue
     {
+
         public int id { get; set; }
         public int priceIndexId { get; set; }
         public PriceIndex priceIndex { get; set; }

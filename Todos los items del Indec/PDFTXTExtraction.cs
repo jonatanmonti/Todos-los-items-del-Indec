@@ -209,10 +209,10 @@ namespace Todos_los_items_del_Indec
 public interface ICuadro
 {
     bool ExecuteValidation(string line);
-    string GetIdRegisterInGrid();  // bool?
+   // string GetIdRegisterInGrid();  // bool?
 }
 
-public class Cuadro0 : ICuadro { }
+//public class Cuadro0 : ICuadro { }
 
 public class Cuadro1 : ICuadro
 {
@@ -221,11 +221,11 @@ public class Cuadro1 : ICuadro
         return line.Trim().Length > 1 && char.IsLetter(line[0]) && line[1] == ')';
     }
 
-    void SetIdRegisterInGrid()
+   /* void IdRegisterInGrid()
     {
         // se utiliza la lista:  "descriptionDictionaryCuadro1" para mapear-
         // la descripcion con la lista y su ID ,para poder cargarlo en la grilla en su registro correspondiente.
-    }
+    }*/
 }
 
 public class Cuadro2 : ICuadro
@@ -299,11 +299,11 @@ public class Cuadro7 : ICuadro
         }
     }
 
-    SetIdRegisterInGrid()
+    /*SetIdRegisterInGrid()
     {
         // revisar si stringSplitedBySpace[0] es un string, y en caso de serlo , mapear con el modelo para ver si es un registro valido-
         // de haber coincidencia se busca el id y se inserta en la grilla.
-    }
+    }*/
 }
 
 public class Cuadro8 : ICuadro

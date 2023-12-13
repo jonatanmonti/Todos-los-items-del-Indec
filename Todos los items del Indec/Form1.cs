@@ -19,7 +19,7 @@ namespace Todos_los_items_del_Indec
 {
     public partial class Form1 : Form
     {
-        //
+        
         public PDFPath PDFPath = new PDFPath();
 
         public TXTPath TXTPath = new TXTPath();

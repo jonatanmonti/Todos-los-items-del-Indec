@@ -21,6 +21,7 @@ namespace Todos_los_items_del_Indec
     {
         //
         //
+        //
         public PDFPath PDFPath = new PDFPath();
 
         public TXTPath TXTPath = new TXTPath();

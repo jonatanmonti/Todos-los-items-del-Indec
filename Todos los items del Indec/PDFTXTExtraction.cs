@@ -7,6 +7,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Net.Http;
 using Newtonsoft.Json;
+using System.Threading.Tasks;
 
 namespace Todos_los_items_del_Indec
 {
@@ -75,7 +76,7 @@ namespace Todos_los_items_del_Indec
                         string[] stringSplitedBySpace = line.Split(' ');
                         if (stringSplitedBySpace.Length > 0)
                         {
-                            string priceIndexId = GetIdRegisterInGrid(); // Revisando logica de GetIdRegisterInGrid
+                            //string priceIndexId = GetIdRegisterInGrid(); // Revisando logica de GetIdRegisterInGrid
                             string LastValue = stringSplitedBySpace[stringSplitedBySpace.Length - 1];
 
                             // jony aqui este valor y el priceIndex al cual se le debe insertar en-
@@ -141,18 +142,13 @@ namespace Todos_los_items_del_Indec
             StringContent content = new StringContent(JsonConvert.SerializeObject(bodyRequest), Encoding.UTF8, "application/json");
             try
             {
+                HttpClient client = new HttpClient();
                 HttpResponseMessage response = await client.PostAsync(apiUrl, content);
+
                 Console.WriteLine($"Status Code: {response.StatusCode}");
                 if (response.IsSuccessStatusCode)
                 {
-                    string jsonResponse = await response.Content.ReadAsStringAsync();
-                    PriceIndexValue responsePriceIndexValue = JsonSerializer.Deserialize<PriceIndexValue>(jsonResponse);
-
-                    Console.WriteLine($"ID: {responsePriceIndexValue.id}");
-                    Console.WriteLine($"PriceIndexID: {responsePriceIndexValue.priceIndexId}");
-                    Console.WriteLine($"Period: {responsePriceIndexValue.period}");
-                    Console.WriteLine($"Value: {responsePriceIndexValue.value}");
-                    Console.WriteLine($"ReplacementIndexID: {responsePriceIndexValue.replacementIndexId}");
+                    // Se posteo con exito el priceIndexValue, 
                 }
                 else
                 {

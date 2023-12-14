@@ -27,9 +27,9 @@ namespace Todos_los_items_del_Indec
             {
                 client.DefaultRequestHeaders.Add("API-Key", apiKey);
                 List<string> previousMonths = GetPreviousMonths(month, year);
-    
 
-                string priceIndexValueSolicitudeList = ConvertToStringPriceIndexValueSolicitudeList(previousMonths);
+
+                List<PriceIndexValueSolicitude> priceIndexValueSolicitudeList = ConvertToStringPriceIndexValueSolicitudeList(previousMonths);
 
                 StringContent content = new StringContent(JsonConvert.SerializeObject(priceIndexValueSolicitudeList), Encoding.UTF8, "application/json");
                 try
@@ -38,7 +38,7 @@ namespace Todos_los_items_del_Indec
                     if (response.IsSuccessStatusCode)
                     {
                         string jsonResponse = await response.Content.ReadAsStringAsync();
-                        List<PriceIndexValue> priceIndexValueDeserializedArray = JsonSerializer.Deserialize<List<PriceIndexValue>>(jsonResponse);
+                        List<PriceIndexValue> priceIndexValueDeserializedArray = JsonConvert.DeserializeObject<List<PriceIndexValue>>(jsonResponse);
 
                         ShowInGridValuesOfSemester(priceIndexValueDeserializedArray);
                     }

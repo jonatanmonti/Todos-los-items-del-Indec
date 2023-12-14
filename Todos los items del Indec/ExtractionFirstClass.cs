@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Text;
 using Newtonsoft.Json;
 using System.Collections.Generic;
@@ -104,7 +104,6 @@ namespace Todos_los_items_del_Indec
 
     public class PriceIndexValue
     {
-
         public int id { get; set; }
         public int priceIndexId { get; set; }
         public PriceIndex priceIndex { get; set; }
@@ -121,4 +120,4 @@ namespace Todos_los_items_del_Indec
         public string description { get; set; }
         public PriceIndexValue values { get; set; }
     }
-}*/
+}

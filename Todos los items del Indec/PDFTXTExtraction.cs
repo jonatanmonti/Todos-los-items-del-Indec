@@ -5,27 +5,24 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Linq;
 using System.Collections.Generic;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace Todos_los_items_del_Indec
 {
     class PDFTXTExtraction
     {
-        Dictionary<string, string> descriptionDictionaryCuadro1 = new Dictionary<string, string>();
-        Dictionary<string, string> descriptionDictionaryCuadro5 = new Dictionary<string, string>();
-        Dictionary<string, string> descriptionDictionaryCuadro7 = new Dictionary<string, string>();
-        Dictionary<string, string> descriptionDictionaryCuadro8 = new Dictionary<string, string>();
-
-        SetdictionaryCuadro1();
-        SetdictionaryCuadro5();
-        SetdictionaryCuadro7();
-        SetdictionaryCuadro8();
-
         List<ICuadro> listOfCuadros = new List<ICuadro>();
         public int cuadroNumber = 0; // en español poprque representa la palabra "cuadro"
         public DateTime periodToExtract;
 
         void Main()
         {
+            SetDictionaryCuadro1();
+            SetDictionaryCuadro5();
+            SetDictionaryCuadro7();
+            SetDictionaryCuadro8();
+
             Cuadro0 cuadro0Action = new Cuadro0();
             listOfCuadros.Add(cuadro0Action);
             Cuadro1 cuadro1Action = new Cuadro1();
@@ -78,7 +75,7 @@ namespace Todos_los_items_del_Indec
                         string[] stringSplitedBySpace = line.Split(' ');
                         if (stringSplitedBySpace.Length > 0)
                         {
-                            string priceIndexId = GetIdRegisterInGrid();
+                            string priceIndexId = GetIdRegisterInGrid(); // Revisando logica de GetIdRegisterInGrid
                             string LastValue = stringSplitedBySpace[stringSplitedBySpace.Length - 1];
 
                             // jony aqui este valor y el priceIndex al cual se le debe insertar en-
@@ -109,6 +106,8 @@ namespace Todos_los_items_del_Indec
             return listOfCuadros[cuadroNumber].ExecuteValidation(line);
         }
 
+
+        //Revisar la definicionde Task async para ver xq rompe.
         public async Task PostNewPriceIndexValue(int priceIndexId, PriceIndex priceIndex, string priod, double value, int replacementIndexId, PriceIndex replacementIndex)
         {
             string apiUrl = "https://ppo.obraspublicas.gob.ar/REST/api/works/PriceIndex/PriceIndexValue";
@@ -168,6 +167,7 @@ namespace Todos_los_items_del_Indec
 
         public void SetDictionaryCuadro1()
         {
+            Dictionary<string, string> descriptionDictionaryCuadro1 = new Dictionary<string, string>();
             descriptionDictionaryCuadro1.Add("e)", "Productos químicos");
             descriptionDictionaryCuadro1.Add("i)", "Motores eléctricos y equipos de aire acondicionado");
             descriptionDictionaryCuadro1.Add("k)", "Asfaltos,combustibles y lubricantes");
@@ -178,6 +178,7 @@ namespace Todos_los_items_del_Indec
 
         public void SetDictionaryCuadro5()
         {
+            Dictionary<string, string> descriptionDictionaryCuadro5 = new Dictionary<string, string>();
             descriptionDictionaryCuadro5.Add("a)", "Mano de obra");
             descriptionDictionaryCuadro5.Add("b)", "Albañilería");
             descriptionDictionaryCuadro5.Add("d)", "Carpinterías");
@@ -193,6 +194,7 @@ namespace Todos_los_items_del_Indec
 
         public void SetDictionaryCuadro7()
         {
+            Dictionary<string, string> descriptionDictionaryCuadro7 = new Dictionary<string, string>();
             descriptionDictionaryCuadro7.Add("NoCpcCode1", "Mano de obra");
             descriptionDictionaryCuadro7.Add("Mano de obra asalariada", "Mano de obra asalariada");
             descriptionDictionaryCuadro7.Add("(en albañilería y homi-", "Mano de obra directa (en albañilería y homigón armado)");
@@ -201,9 +203,29 @@ namespace Todos_los_items_del_Indec
 
         public void SetDictionaryCuadro8()
         {
+            Dictionary<string, string> descriptionDictionaryCuadro8 = new Dictionary<string, string>();
             descriptionDictionaryCuadro8.Add("unique", "Yesería (incluye: mano de obra de subcontrato de yesería y sus materiales intervinientes para dicho ítem");
         }
     }
+}
+
+public class PriceIndexValue
+{
+    public int id { get; set; }
+    public int priceIndexId { get; set; }
+    public PriceIndex priceIndex { get; set; }
+    public string period { get; set; } //date-time
+    public double value { get; set; }
+    public int replacementIndexId { get; set; }
+    public PriceIndex replacementIndex { get; set; }
+}
+
+public class PriceIndex
+{
+    public int id { get; set; }
+    public int cpcCode { get; set; }
+    public string description { get; set; }
+    public PriceIndexValue values { get; set; }
 }
 
 public interface ICuadro
@@ -212,7 +234,13 @@ public interface ICuadro
    // string GetIdRegisterInGrid();  // bool?
 }
 
-//public class Cuadro0 : ICuadro { }
+public class Cuadro0 : ICuadro 
+{
+    public bool ExecuteValidation(string line) 
+    {
+        return false; //revisar logica
+    }
+}
 
 public class Cuadro1 : ICuadro
 {
@@ -299,11 +327,11 @@ public class Cuadro7 : ICuadro
         }
     }
 
-    SetIdRegisterInGrid()
+  /*  SetIdRegisterInGrid()
     {
         // revisar si stringSplitedBySpace[0] es un string, y en caso de serlo , mapear con el modelo para ver si es un registro valido-
         // de haber coincidencia se busca el id y se inserta en la grilla.
-    }
+    }   */
 }
 
 public class Cuadro8 : ICuadro

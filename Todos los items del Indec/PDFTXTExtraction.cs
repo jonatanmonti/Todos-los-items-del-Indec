@@ -1,4 +1,4 @@
-﻿/*using Microsoft.Win32;
+﻿using Microsoft.Win32;
 using System;
 using System.IO;
 using System.Text;
@@ -70,7 +70,7 @@ namespace Todos_los_items_del_Indec
                     if (ValidateNextCuadroIsContained(line))
                     {
                         cuadroNumber++;
-                        continue;
+                        continue;   
                     }
 
                     if (ValidateCondition(line))
@@ -136,7 +136,7 @@ namespace Todos_los_items_del_Indec
                       cpcCode = //XXXXX,
                       description = "//XXXXX",
                       values = //XXXXX
-                  }
+                  }*/
             };
 
             StringContent content = new StringContent(JsonConvert.SerializeObject(bodyRequest), Encoding.UTF8, "application/json");
@@ -221,7 +221,7 @@ public class Cuadro1 : ICuadro
         return line.Trim().Length > 1 && char.IsLetter(line[0]) && line[1] == ')';
     }
 
-   /* void IdRegisterInGrid()
+    void IdRegisterInGrid()
     {
         // se utiliza la lista:  "descriptionDictionaryCuadro1" para mapear-
         // la descripcion con la lista y su ID ,para poder cargarlo en la grilla en su registro correspondiente.
@@ -299,7 +299,7 @@ public class Cuadro7 : ICuadro
         }
     }
 
-    /*SetIdRegisterInGrid()
+    SetIdRegisterInGrid()
     {
         // revisar si stringSplitedBySpace[0] es un string, y en caso de serlo , mapear con el modelo para ver si es un registro valido-
         // de haber coincidencia se busca el id y se inserta en la grilla.
@@ -357,4 +357,4 @@ public class Cuadro13 : ICuadro
     {
         return true; //set other logic;
     }
-}*/
+}
